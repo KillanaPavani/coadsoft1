@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make A Website Landing Page
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container{
+            width:100%;
+            min-height:100vh;
+            background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.5)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp5kUxbDJABqtuwDmwx6KdUMqVUzHtsHS0zw&usqp=CAU");
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+        }
+        .row{
+            width:100%;
+            padding:8px,80px;
+        }
+        nav{
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:10px 0px;
+            
+        }
+        nav ul{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding:8px 80px;
+            font-size:20px;
+            margin-top: 10px;
+        }
+        nav ul li{
+            list-style: none;
+            padding:0px, 5px;
+        }
+         nav ul li a{
+            padding:10px 18px;
+            border-radius:5px;
+            font-family: sans-serif;
+            color:white;
+            text-decoration: none;
+         }
+         nav ul li a:hover{
+            background-color: hotpink;
+         }
+         nav ul li  .active{
+         background-color: hotpink;
+         }
+         nav h1{
+            font-size:35px;
+            color:white;
+            font-weight:600px;
+            text-transform: uppercase;
+            margin-top: 10px;
+         }
+         .content{
+            width:100%;
+            min-height:100vh;
+            position:absolute;
+            top:0;
+            left:0;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            flex-direction: column;
+            text-align:center;
+         }
+         .content h1{
+            font-size:45px;
+            font-weight: 700;
+            letter-spacing:1.5px;
+         }
+         .content p{
+            font-size:19px;
+            color: #7e7e7e;
+            margin:10px 0px;
+         }
+         .content a{
+            text-decoration:none;
+            font-size:19px;
+            display:inline-block;
+            padding:10px 20px;
+            background-color: #f54298;
+            border-radius: 5px;
+            color:white;
+            letter-spacing:2px;
+            margin-top:20px;
+         }
+         .content a:hover{
+            background-color: #727cf0;
+            transition: 0.5s;
+         }
+         * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            background-color: #809ffa;
+        }
+        h1 {
+            text-align: center;
+            padding-top: 50px;
+            font-size: 41px;
+            margin-bottom: 20px;
+        }
+        body{
+            background-image: url("https://images4.newscred.com/Zz1kNmFkYmFmNzhlNGIxMWViYTU1ZDFmYjg0ZWI5MTc4Zg==");
+            background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed
+        }
+        .about{
+     display:grid;
+     grid-template-columns: repeat(2,1fr);
+     align-items:center;
+     gap:1.5em;
+
+    }
+    .about-img img{
+     padding-bottom:20%;
+     max-width:630px;
+     height:auto;
+     width: 350px;
+     border-radius:8px;
+     height:450px;
+     margin-left:40px;
+     padding:40px
+    }
+    .about-text h2 span{
+     color:#0ef;
+    }
+     .about-text h4{
+       font-size:29px;
+       font-weight:600;
+       color:white;
+       line-height:1.7;
+       margin:15px 0 30px;
+     }
+     .about-text p{
+       color:aliceblue;
+       font-size:20px;
+       line-height:1.4;
+       margin-bottom:4rem;
+     }
+     .btn-box{
+     font-weight:600px;
+     text-decoration: none;
+     }
+   
+        .services {
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px auto; 
+            text-align: center;
+            padding: 20px;
+        }
+        .card {
+            width: calc(33.33% - 40px); 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px;
+            padding: 20px;
+            background-color: #efefef;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.4% ease;
+        }
+        .card:hover {
+            background-color: aquamarine;
+            transition: 0.4s ease;
+        }
+        .card h2 {
+            font-size: 28px;
+            color: #c94f4f;
+            margin-bottom: 30px;
+        }
+        .button {
+            font-size: 15px;
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            background-color: #c94f4f;
+            transition: 0.4s ease;
+        }
+        .button:hover {
+            background-color: #a52a2a;
+        }
+        
+        
+        @media  screen and (max-width:940px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                width: 100%;
+                margin: 12px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <nav>
+                <h1>LOGO</h1>
+                <ul>
+                    <li><a href=""  class="active">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <h1>Design And Development</h1>
+                <p>
+                    A landing page is a page on your site that is designed to convert visitors into leads.</p>
+                    <a href="">Learn More</a>
+            </div>
+        </div>
+    </div>
+ 
+<section class="about" id="about">
+  <div class="about-img">
+    <img src="/home/rgukt/Desktop/Web Developement Batch/coadsoft/Images/photo.jpeg" height="200" width="200">
+  </div>
+  <div class="about-text">
+    <h2>About<span>Me</span></h2>
+    <h4>Full stack developer!..</h4>
+   <p>I am a versatile full-stack developer with expertise in both front-end and back-end technologies. I excel in designing responsive and intuitive user interfaces using HTML, CSS, and JavaScript, while also implementing robust server-side logic with languages like Python and Node.js. My experience in database management and API integration allows me to create seamless and scalable web applications. I am passionate about staying current with industry trends and delivering efficient, end-to-end solutions that meet both user needs and business goals.</p>
+    <a href="#" class="btn-box">More About Me</a>
+  </div>
+  
+  </div>
+</section>
+
+    <h1><u>Our Services:</u></h1>
+    <div class="services">
+        
+        <div class="card">
+            <div class="icon">
+                <i class="fa fa-calendar"></i>
+            </div>
+            <h2>Planning</h2>
+           <p>Welcome to Our Planning Hub! Our dedicated team excels in meticulous planning to help you achieve your goals efficiently. We streamline processes while ensuring top-notch outcomes. Get in touch through multiple channels and explore our portfolio for inspiration. Your vision is our mission.</p>
+            <a href="" class="button">Read More</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <i class="fa fa-wrench"></i>
+            </div>
+            <h2>Renovation</h2>
+           <p>Welcome to Our Renovation Hub! Our skilled team is here to transform your space with efficiency and excellence. We minimize disruptions while delivering outstanding results. Contact us through various channels and explore our portfolio for inspiration. Your dream space is our commitment.</p>
+            <a href="" class="button">Read More</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <i class="fa fa-handshake-o"></i>
+            </div>
+            <h2>Support</h2>
+            <p>Welcome to our 24/7 Support Center, where our dedicated team of experts is readily available to provide swift assistance. We prioritize efficiency in addressing your inquiries, concerns, or technical issues, aiming for your satisfaction. Our goal is to minimize disruptions, and you can easily reach us through various contact channels.</p>
+            <a href="" class="button">Read More</a>
+        </div>
+    </div>
+</body>
+</html>
